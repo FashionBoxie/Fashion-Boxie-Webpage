@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>fashion-boxie</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.homeImg ,.description, .contactUs {
+  display: block;
+  float:left;
+  width:100%;
+  height: auto;
+  z-index: -2;
+}
+
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.navBarList{
+    float: right;
+}
+
+
+.navBarItem {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.contact{
+  background-color: black;
+  width: 100%;
+  height: auto;
+
+}
+ .contactImg{
+   width:12%;
+   height:12%;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-bottom: 10%;
+ }
+.form{
+  z-index: 60;
+}
+
+
+  </style>
+  <script>
+
+  function TextColor(){
+    var DescriptionHeight = document.getElementById("Description").offsetTop;
+
+    var distance = document.body.scrollTop;
+
+    if (distance>DescriptionHeight-20){
+      document.getElementById('nBI1').style.color="white";
+      document.getElementById('nBI2').style.color="white";
+      document.getElementById('nBI3').style.color="white";
+      document.getElementById('nBI4').style.color="white";
+    }else {
+      document.getElementById('nBI1').style.color="black";
+      document.getElementById('nBI2').style.color="black";
+      document.getElementById('nBI3').style.color="black";
+      document.getElementById('nBI4').style.color="black";
+    }
+
+  }
+
+
+  </script>
+</head>
+
+<body onscroll="TextColor()">
+  <ul class="navBar">
+    <li class="navBarList"><a id="nBI1" class="navBarItem" href="#Contact">CONTACT</a></li>
+    <li class="navBarList"><a id="nBI2" class="navBarItem" href="#about">TEAM</a></li>
+    <li class="navBarList"><a id="nBI3" class="navBarItem" href="#Description">ABOUT US</a></li>
+    <li class="navBarList"><a id="nBI4" class="navBarItem" href="#Home">HOME</a></li>
+  </ul>
+
+  <a name="Home"></a>
+  <div id="HomeDIv">
+    <a href="http://imgur.com/9Hg0Bdq"><img class="center homeImg" src="http://i.imgur.com/9Hg0Bdq.png" title="source: imgur.com" /></a>
+  </div>
+
+  <a name="Description">
+    <a href="http://imgur.com/wWQhlYb"><img id="Description" class="center description" src="http://i.imgur.com/wWQhlYb.png" title="source: imgur.com" /></a>
+  </a>
+
+  <a name="Contact"></a>
+    <a href="http://imgur.com/rJrMlVO"><img  id="Contact" class="center contactUs" src="http://i.imgur.com/rJrMlVO.png" title="source: imgur.com" /></a>
+
+    <div class="contact">
+	  <a href="https://www.facebook.com/FashionBoxie/">
+    <a href="http://imgur.com/jc8w9j2"><img class="contactImg" src="http://i.imgur.com/jc8w9j2.png" title="source: imgur.com" /></a>
+    <a href="https://twitter.com/FashionBoxie">
+    <a href="http://imgur.com/fA5w6co"><img class="contactImg" src="http://i.imgur.com/fA5w6co.png" title="source: imgur.com" /></a>
+	  <a href="https://www.instagram.com/fashion_boxie/">
+    <a href="http://imgur.com/sbkzBDx"><img class="contactImg" src="http://i.imgur.com/sbkzBDx.png" title="source: imgur.com" /></a>
+    </div>
+
+
+</body>
+</html>
