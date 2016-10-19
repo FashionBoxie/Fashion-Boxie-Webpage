@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fashion-boxie</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 0;
+      margin: 0;
+      font-size: 14px;
+  }
+      .homeDiv{
+        display: block;
+        float:left;
+        width:100%;
+        height: auto;
+        z-index: -2;
+      }
+      .homeImg ,.description, .contactUs {
+        display: block;
+        float:left;
+        width:100%;
+        height: auto;
+        z-index: -2;
+      }
+      .getTheAppBut{
+        position: absolute;
+        border: none;
+        color: black;
+        padding: 20px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        max-width: 25%;
+        font-size: 18px;
+        margin-left: 72.5%;
+        margin-right: auto;
+        margin-top: 40%;
+        margin-bottom: auto;
+        cursor: pointer;
+        z-index: 1;
+
+      }
+
+
+      @media screen and (min-width:700px) and (orientation:landscape) {
+          .getTheAppBut{
+            font-size: 28px;
+          }
+      }
+      @media screen and (min-width:1200px) and (orientation:landscape) {
+          .getTheAppBut{
+            font-size: 36px;
+          }
+      }
+      @media screen and (min-width:1550px) and (orientation:landscape) {
+          .getTheAppBut{
+            font-size: 48px;
+          }
+      }
+      @media screen and (min-width:1700px) and (orientation:landscape) {
+          .getTheAppBut{
+            font-size: 58px;
+          }
+      }
+      @media screen and (min-width:1900px) and (orientation:landscape) {
+          .getTheAppBut{
+            font-size: 64px;
+          }
+      }
+
+
+    </style>
+    <script>
+    </script>
+  </head>
+  <body>
+    <div class="homeDiv">
+      <button class="getTheAppBut" type="button" disabled>Get the App</button>
+      <img class="center homeImg" src="http://i.imgur.com/abrFIAr.png"/></a>
+
+    </div>
+
+  </body>
+</html>
